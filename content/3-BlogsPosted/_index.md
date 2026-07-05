@@ -6,11 +6,6 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-<!-- {{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
-This section will list and introduce the blogs you have posted to [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj). For example: -->
 
 ###  [Blog 1 - Building a Hybrid Multi-Tenant SaaS Architecture for Stateful Services on AWS](3.1-Blog1/)
 This article introduces a Hybrid Architecture solution on AWS, combining the Isolation (Silo) and Shared (Pool) models for stateful services (such as Game Servers and real-time Chat). The system optimizes costs using the Pool model for small customers and guarantees performance for VIP/Enterprise customers through independent Silo partitions, utilizing DynamoDB as a dynamic "Routing Table" along with Amazon EKS and ElastiCache (Redis) to synchronize session states in real-time.
