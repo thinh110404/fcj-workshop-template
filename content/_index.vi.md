@@ -25,7 +25,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 20/04/2026 đến ngày 12/07/2026
 
-![Ảnh đại diện của bạn](/images/avatar1.jpg)
+![Ảnh đại diện của bạn](https://thinh110404.github.io/fcj-workshop-template/images/avatar1.jpg)
 
 
 
