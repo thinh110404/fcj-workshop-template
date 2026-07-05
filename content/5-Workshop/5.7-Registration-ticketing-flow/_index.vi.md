@@ -130,6 +130,7 @@ Tiếp tục mở DynamoDB → Tables → bảng Events, kiểm tra số lượn
 
 ![FullFe](/fcj-workshop-template/images/5-Workshop/5.7-Registration-ticketing-flow/FullSlotFE.jpg)
 
+
 ![FullAWS](/fcj-workshop-template/images/5-Workshop/5.7-Registration-ticketing-flow/FullSlot.jpg)
 
 ---
