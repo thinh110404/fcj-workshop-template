@@ -5,55 +5,35 @@ weight: 2
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 10:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Xây dựng giao diện Trang chủ/Danh sách sự kiện công khai.
+* Xây dựng giao diện Trang chi tiết sự kiện.
+* Kết nối frontend với API GET /events và GET /events/{id}.
+* Tham gia event FCAJ Community Day
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc                                                                                                                                                                                                                     | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | --------------- | -------------- |
+| 2   | - Thiết kế wireframe/layout cho Trang danh sách sự kiện <br> - Xác định các thành phần hiển thị: tên sự kiện, trạng thái, số slot còn lại                                                                                 | 22/06/2026   | 22/06/2026      |   https://cloudjourney.awsstudygroup.com/              |
+| 3   | - Dựng component EventCard, EventList <br> - Gọi API GET /events, xử lý loading state <br> - Hiển thị danh sách sự kiện, ưu tiên sự kiện Active                                                                            | 23/06/2026   | 23/06/2026      |       https://cloudjourney.awsstudygroup.com/          |
+| 4   | - Xử lý trường hợp lỗi API (network error, empty data) <br> - Thêm bộ lọc/hiển thị trạng thái sự kiện (badge Draft/Active/Ended/Cancelled) <br> - **Thực hành:** Test hiển thị với nhiều dữ liệu mẫu                       | 24/06/2026   | 24/06/2026      |       https://cloudjourney.awsstudygroup.com/          |
+| 5   | - Thiết kế và dựng giao diện Trang chi tiết sự kiện: tiêu đề, mô tả, thời gian, địa điểm, banner, tổng slot/slot còn lại <br> - Gọi API GET /events/{id} theo route param                                                  | 25/06/2026   | 25/06/2026      |    https://cloudjourney.awsstudygroup.com/             |
+| 6   | - **Thực hành:** <br>&emsp; + Xử lý loading/error cho trang chi tiết <br>&emsp; + Responsive giao diện cho mobile/desktop <br>&emsp; + Test luồng chuyển từ danh sách sang chi tiết sự kiện                               | 26/06/2026   | 26/06/2026      |      https://cloudjourney.awsstudygroup.com/           |
+| 7   | - Tham gia event FCAJ Community Day                              | 27/06/2026   | 27/06/2026      |                |
 
 ### Kết quả đạt được tuần 10:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hoàn thành giao diện Trang chủ/Danh sách sự kiện: hiển thị đúng các sự kiện đang mở đăng ký, trạng thái và số slot còn lại.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Hoàn thành giao diện Trang chi tiết sự kiện: hiển thị đầy đủ tiêu đề, mô tả, thời gian, địa điểm, banner/poster, tổng slot và slot còn lại.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Kết nối thành công frontend với API GET /events và GET /events/{id}.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Xử lý được các trạng thái loading, lỗi API và trường hợp không có dữ liệu.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Giao diện responsive, hiển thị tốt trên cả desktop và mobile.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hoàn tất phần giao diện public của module Event Management, sẵn sàng chuyển sang xây dựng giao diện Admin.

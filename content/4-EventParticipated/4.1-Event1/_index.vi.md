@@ -1,125 +1,70 @@
 ---
 title: "Event 1"
-date: 2024-01-01
+date: 2026-05-23
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Bài thu hoạch sự kiện “Saturday Meet Up: Learn, Share & Connect”
 
 ### Mục Đích Của Sự Kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- Nâng cao năng lực Cloud thực chiến: Sự kiện mang đến góc nhìn thực tế về hành trình chinh phục các chứng chỉ và thử thách Cloud (AWS Cloud Quest), giúp người tham gia hình dung rõ lộ trình học tập, rèn luyện kỹ năng cloud một cách bài bản thay vì học lý thuyết đơn thuần.
+- Chữa lành và tiếp thêm sự tự tin: Bên cạnh yếu tố kỹ thuật, sự kiện dành không gian để chia sẻ về những rào cản tâm lý phổ biến trong giới công nghệ như nỗi sợ lên tiếng, sự thiếu tự tin, hoặc hội chứng tự nghi ngờ bản thân (Imposter Syndrome), từ đó khuyến khích người tham gia mạnh dạn thể hiện bản thân hơn.
+- Cổ vũ tinh thần thi đấu và học hỏi qua thực chiến: Thông qua phần chia sẻ từ đội thi Hackathon, sự kiện truyền cảm hứng về cách áp dụng kiến thức vào một sản phẩm/dự án thực tế trong thời gian giới hạn, cũng như kinh nghiệm làm việc nhóm dưới áp lực.
+- Mở rộng góc nhìn về sản phẩm công nghệ ứng dụng: Phần giới thiệu website tuvidaiviet.com cho thấy một hướng đi khác của công nghệ - ứng dụng vào lĩnh vực đời sống tinh thần, văn hoá (tử vi), giúp người tham gia có thêm góc nhìn về việc xây dựng sản phẩm công nghệ phục vụ nhu cầu ngách của thị trường.
 
 ### Danh Sách Diễn Giả
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+- **Huỳnh Thái Linh** 
+- **The Baller**
+- **Trần Hữu Nghĩa** 
+- **Trần Minh Quân**
+- **Khắc Uy**
 
 ### Nội Dung Nổi Bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### Hành trình chinh phục AWS Cloud Quest
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+- Học Cloud qua trải nghiệm "chơi mà học": AWS Cloud Quest được giới thiệu như một cách tiếp cận trực quan, gamify hóa việc học các dịch vụ Cloud của AWS, giúp người mới bắt đầu dễ tiếp cận hơn so với việc đọc tài liệu khô khan.
+- Lộ trình rèn luyện kỹ năng thực chiến: Nhấn mạnh tầm quan trọng của việc thực hành trực tiếp trên các bài lab, thử thách thay vì chỉ học lý thuyết, để hiểu sâu cách vận hành hạ tầng Cloud trong thực tế.
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### Vượt qua nỗi sợ lên tiếng và hội chứng tự nghi ngờ bản thân
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+- Nhận diện hội chứng Impostor Syndrome: Chia sẻ về cảm giác phổ biến trong giới kỹ thuật - luôn cảm thấy bản thân chưa đủ giỏi, sợ bị đánh giá khi phát biểu ý kiến hoặc chia sẻ kiến thức trước đám đông.
+- Phương pháp xây dựng sự tự tin: Truyền cảm hứng về việc chủ động bước ra khỏi vùng an toàn, tập lên tiếng trong các buổi họp, cộng đồng nhỏ trước khi tiến tới những sân chơi lớn hơn.
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+#### Kinh nghiệm thực chiến từ cuộc thi Hackathon
 
-#### Domain-Driven Design (DDD)
+- Áp lực thời gian và tinh thần đồng đội: Đội thi chia sẻ về quá trình làm việc nhóm dưới áp lực deadline gấp rút, cách phân chia công việc hợp lý giữa các thành viên để hoàn thành sản phẩm.
+- Bài học từ quá trình thi đấu: Những khó khăn thực tế gặp phải khi phát triển sản phẩm trong thời gian ngắn và cách xử lý vấn đề phát sinh ngay tại chỗ.
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+#### Giới thiệu sản phẩm công nghệ ứng dụng: tuvidaiviet.com
 
-#### Event-Driven Architecture
+- Ứng dụng công nghệ vào lĩnh vực văn hoá - tâm linh: Website tuvidaiviet.com được giới thiệu như một sản phẩm công nghệ khai thác nhu cầu tra cứu, xem tử vi theo góc nhìn hiện đại, kết hợp giữa kiến thức truyền thống và nền tảng số.
+- Góc nhìn về sản phẩm ngách: Cho thấy cơ hội xây dựng sản phẩm công nghệ phục vụ những thị trường ngách, không nhất thiết phải cạnh tranh trực diện ở các mảng công nghệ phổ biến.
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
-
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
-
+#### ...
 ### Những Gì Học Được
 
-#### Tư Duy Thiết Kế
+#### Tư Duy Phát Triển Bản Thân
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+- Tự tin đến từ sự luyện tập: Việc lên tiếng, chia sẻ ý kiến là một kỹ năng có thể rèn luyện dần, không phải điều bẩm sinh sẵn có.
+- Học đi đôi với hành: Từ câu chuyện AWS Cloud Quest, việc "học qua thực hành" giúp kiến thức được ghi nhớ và áp dụng hiệu quả hơn nhiều so với học thuộc lý thuyết.
 
-#### Kiến Trúc Kỹ Thuật
+#### Kỹ Năng Làm Việc Nhóm & Sản Phẩm
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
-
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+- Làm việc nhóm dưới áp lực: Từ kinh nghiệm Hackathon, hiểu rõ hơn tầm quan trọng của giao tiếp rõ ràng và phân công hợp lý khi thời gian hạn chế.
+- Tư duy sản phẩm đa dạng: Nhận ra công nghệ có thể ứng dụng ở nhiều lĩnh vực khác nhau ngoài các mảng kỹ thuật truyền thống, như trường hợp của tuvidaiviet.com.
 
 ### Ứng Dụng Vào Công Việc
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+- Chủ động luyện tập kỹ năng Cloud qua thực hành: Áp dụng cách học "learning by doing" như AWS Cloud Quest vào việc tự nâng cao kỹ năng cá nhân.
+- Rèn luyện sự tự tin khi chia sẻ ý kiến: Chủ động tập lên tiếng trong các buổi họp nhóm, đóng góp ý kiến nhiều hơn thay vì giữ im lặng vì sợ sai.
+- Cải thiện kỹ năng làm việc nhóm dưới áp lực: Áp dụng bài học từ đội Hackathon vào các dự án thực tế có deadline gấp.
+- Mở rộng tư duy về sản phẩm công nghệ: Cân nhắc những hướng đi ứng dụng công nghệ vào các lĩnh vực ngách, thay vì chỉ tập trung vào những mảng công nghệ phổ biến.
 
 ### Trải nghiệm trong event
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
-
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
-
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+> Sau khi tham gia sự kiện, mình học được không chỉ kiến thức về Cloud mà còn những bài học về kỹ năng mềm và sự tự tin. Phần chia sẻ về nỗi sợ lên tiếng khiến mình nhận ra nhiều lúc bản thân cũng ngại phát biểu vì sợ sai. Bên cạnh đó, những kinh nghiệm từ Hackathon và AWS Cloud Quest giúp mình có thêm động lực học theo hướng thực hành nhiều hơn. Nhìn chung, đây là một buổi chia sẻ bổ ích, mang đến nhiều góc nhìn thực tế và tạo động lực để mình tiếp tục học tập, phát triển bản thân. 

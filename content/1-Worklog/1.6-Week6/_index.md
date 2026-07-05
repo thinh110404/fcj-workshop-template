@@ -1,57 +1,47 @@
 ---
-title: "Week 6 Worklog"
+title: "Worklog Week 6"
 date: 2024-01-01
 weight: 1
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 6 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Understand the AWS Shared Responsibility Model.
+- Learn the basic security concepts in AWS account and identity management.
+- Study AWS IAM Root Account, AWS Organizations, IAM Admin User, and AWS Identity Center.
+- Learn AWS Key Management Service (KMS) and basic encryption concepts.
+- Practice configuring IAM Policies and Multi-Factor Authentication (MFA).
+- Join the event
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 2 | - Learn the AWS Shared Responsibility Model. <br> - Distinguish the security responsibilities of AWS and the customer. <br> - Note the basic security principles when using an AWS account. | 25/05/2026 | 25/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 3 | - Learn about the AWS IAM Root Account and security best practices. <br> - Understand why the root account should not be used for daily operations. <br> - Learn how to protect root account credentials. | 26/05/2026 | 26/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 4 | - Learn about AWS Organizations and IAM Admin User. <br> - Understand how to organize accounts and manage basic access permissions. <br> - Review how to create an admin user and assign permissions through an IAM policy. | 27/05/2026 | 27/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 5 | - Learn about AWS Identity Center and the concept of Single Sign-On. <br> - Learn about AWS Key Management Service (KMS). <br> - Understand the basic concept of encryption and the role of KMS in protecting data. | 28/05/2026 | 28/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 6 | - **Practice:** <br>&emsp; + Configure IAM Policy <br>&emsp; + Check permission settings <br>&emsp; + Set up Multi-Factor Authentication (MFA) for a user <br> - Review the security configuration and record the practice results. | 29/05/2026 | 29/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 7 | Join the event | 30/05/2026 | 30/05/2026 |  |
 
 ### Week 6 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Understood the AWS Shared Responsibility Model and distinguished the security responsibilities between AWS and the customer.
 
-* Successfully created and configured an AWS Free Tier account.
+- Recognized the importance of securing the AWS account, especially the root account.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+- Understood why root account credentials should be protected and why the root account should not be used for daily operations.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+- Reviewed the knowledge of AWS Organizations and IAM Admin User in managing accounts and access permissions.
 
-* Used AWS CLI to perform basic operations such as:
+- Understood the basic role of AWS Identity Center and Single Sign-On in centralized access management.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+- Understood the role of AWS Key Management Service (KMS) in encryption and data protection.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- Practiced configuring IAM Policy and checking access permissions.
+
+- Practiced setting up Multi-Factor Authentication (MFA) to strengthen user security.
+
+- Improved awareness of security governance and best practices when working with AWS services.

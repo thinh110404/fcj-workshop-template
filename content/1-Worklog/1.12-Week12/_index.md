@@ -1,57 +1,39 @@
 ---
-title: "Week 12 Worklog"
+title: "Worklog Week 12"
 date: 2024-01-01
 weight: 2
 chapter: false
 pre: " <b> 1.12. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 12 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Integrate and test the full Event Management module (frontend + backend).
+* Align EventDto and Status with Tâm for the Registration and Auth modules.
+* Record results and capture screenshots/video for the workshop report.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 2 | - Review the full flow from Event List → Event Detail → Admin Create/Update/Delete. <br> - Check data consistency between the Frontend, Lambda, and EventTable. | 06/07/2026 | 06/07/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 3 | - Meet with Tâm to align EventId, EventDto, and Status (Draft/Active/Ended/Cancelled) so the Registration module reads AvailableSlots correctly. <br> - Align the Admin authorization mechanism with the Auth module. | 07/07/2026 | 07/07/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 4 | - Fix issues that arise after alignment (if any field/format changes are needed). <br> - **Practice:** Re-test the full APIs and UI after the adjustments. | 08/07/2026 | 08/07/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 5 | - Run end-to-end tests: create event → display in public view → edit/cancel → verify updates on the frontend. <br> - Check banner upload/display on both the public and admin pages. | 09/07/2026 | 09/07/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 6 | - Capture screenshots of the main features. <br> - Record a short demo video: Event List, Event Detail, Admin create/edit/cancel event. <br> - Summarize the results of the Event Management module for the workshop report. | 10/07/2026 | 10/07/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ### Week 12 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Completed the integration of the full Event Management module: the frontend (public + admin) worked stably with the Backend Lambda and EventTable.
 
-* Successfully created and configured an AWS Free Tier account.
+* Successfully aligned EventId, EventDto, and Status with Tâm, ensuring the Registration module read AvailableSlots correctly and only allowed registration for Active events.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Successfully aligned the Admin authorization mechanism with the Auth module, ensuring security for the create/update/delete APIs.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Event List and Event Detail ran stably on the frontend with real data from EventTable.
 
-* Used AWS CLI to perform basic operations such as:
+* The Admin could create/edit/cancel events successfully, with data synced correctly to EventTable and banners/posters stored properly in S3.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* Completed screenshots and a short demo video for the main features.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Delivered the full results of the Event Management module for the workshop report.

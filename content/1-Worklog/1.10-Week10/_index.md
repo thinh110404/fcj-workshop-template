@@ -1,57 +1,39 @@
 ---
-title: "Week 10 Worklog"
+title: "Worklog Week 10"
 date: 2024-01-01
 weight: 2
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 10 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Build the public Home/Event List interface.
+* Build the Event Detail interface.
+* Connect the frontend with the APIs GET /events and GET /events/{id}.
+* Participate in the FCAJ Community Day event
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 2 | - Design the wireframe/layout for the Event List page. <br> - Define the displayed information: event name, status, and remaining slots. | 22/06/2026 | 22/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 3 | - Build the EventCard and EventList components. <br> - Call the GET /events API and handle the loading state. <br> - Display the event list, prioritizing Active events. | 23/06/2026 | 23/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 4 | - Handle API error cases (network error, empty data). <br> - Add filters and display event status badges (Draft/Active/Ended/Cancelled). <br> - **Practice:** Test the display with multiple sample data sets. | 24/06/2026 | 24/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 5 | - Design and build the Event Detail page: title, description, time, location, banner, total slots, and remaining slots. <br> - Call the GET /events/{id} API using the route parameter. | 25/06/2026 | 25/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 6 | - **Practice:** <br>&emsp; + Handle loading/error states for the detail page <br>&emsp; + Make the interface responsive for mobile/desktop <br>&emsp; + Test the flow from the list to the detail page | 26/06/2026 | 26/06/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 7 | - Participate in the FCAJ Community Day event | 27/06/2026 | 27/06/2026 |  |
 
 ### Week 10 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Completed the public Home/Event List interface, displaying currently open registrations, status, and remaining slots.
 
-* Successfully created and configured an AWS Free Tier account.
+* Completed the Event Detail interface, showing the title, description, time, location, banner/poster, total slots, and remaining slots.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Successfully connected the frontend to the GET /events and GET /events/{id} APIs.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Handled loading, API error, and empty data states.
 
-* Used AWS CLI to perform basic operations such as:
+* Created a responsive interface that works well on both desktop and mobile.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Completed the public frontend portion of the Event Management module and prepared it for the Admin interface.

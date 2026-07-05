@@ -5,55 +5,40 @@ weight: 1
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 7:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Thiết kế cấu trúc dữ liệu cho module Event Management (EventTable trên DynamoDB).
+* Khởi tạo hạ tầng lưu trữ ảnh banner/poster sự kiện (S3 Bucket).
+* Chuẩn bị khung project cho Event-CRUD-Lambda.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc                                                                                                                                                                                                                       | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------- |
+| 2   | - Phân tích yêu cầu module Event Management <br> - Xác định các thuộc tính cần thiết cho EventTable: EventId, Title, Description, Location, StartTime, EndTime, TotalSlots, AvailableSlots, BannerUrl, Status, CreatedAt, UpdatedAt | 01/06/2026   | 01/06/2026      | https://cloudjourney.awsstudygroup.com/                |
+| 3   | - Tìm hiểu DynamoDB: Partition Key, Sort Key, Data Types <br> - Thiết kế schema EventTable trên DynamoDB <br> - Xác định các trạng thái Status: Draft/Active/Ended/Cancelled                                                | 02/06/2026   | 02/06/2026      | <https://docs.aws.amazon.com/dynamodb/> |
+| 4   | - **Thực hành:** Tạo bảng EventTable trên AWS Console <br>&emsp; + Cấu hình Partition Key = EventId <br>&emsp; + Cấu hình capacity mode (On-demand) <br> - Nhập thử dữ liệu mẫu để kiểm tra schema                          | 03/06/2026   | 03/06/2026      | <https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/> |
+| 5   | - Tìm hiểu Amazon S3: Bucket, Object, Permission, Presigned URL <br> - Thiết kế cấu trúc lưu trữ banner/poster (naming convention, folder theo EventId)                                                                     | 04/06/2026   | 04/06/2026      | <https://docs.aws.amazon.com/s3/> |
+| 6   | - **Thực hành:** <br>&emsp; + Tạo S3 Bucket "event-assets" <br>&emsp; + Cấu hình quyền truy cập (Bucket Policy, CORS) <br>&emsp; + Upload thử ảnh test và lấy public URL <br> - Ghi chú lại cấu trúc dữ liệu để thống nhất với nhóm (EventDto) | 05/06/2026   | 05/06/2026      | <https://docs.aws.amazon.com/s3/> |
 
 ### Kết quả đạt được tuần 7:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hoàn thành thiết kế schema EventTable trên DynamoDB với đầy đủ các thuộc tính:
+  * EventId (Partition Key)
+  * Title, Description, Location
+  * StartTime, EndTime
+  * TotalSlots, AvailableSlots
+  * BannerUrl
+  * Status (Draft/Active/Ended/Cancelled)
+  * CreatedAt, UpdatedAt
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Đã tạo thành công EventTable trên AWS DynamoDB và kiểm tra được việc đọc/ghi dữ liệu mẫu.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Đã tạo S3 Bucket riêng để lưu trữ banner/poster sự kiện, cấu hình quyền truy cập và CORS phù hợp cho việc upload từ frontend.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Xác định được quy tắc: khi tạo event, AvailableSlots khởi tạo bằng TotalSlots.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Chuẩn bị được cấu trúc EventDto (dữ liệu trả về cho frontend/module khác) để thống nhất với Tâm cho module Registration và Auth.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Dựng khung project ban đầu cho Event-CRUD-Lambda, sẵn sàng cho việc viết logic API ở tuần tiếp theo.

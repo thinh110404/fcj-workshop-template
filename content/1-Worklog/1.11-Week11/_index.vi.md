@@ -5,55 +5,33 @@ weight: 2
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 11:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Xây dựng giao diện Admin - Tạo sự kiện.
+* Xây dựng giao diện Admin - Sửa/Hủy sự kiện.
+* Xử lý validate form, upload banner, loading/error state và thông báo kết quả.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc                                                                                                                                                                                                                     | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | --------------- | -------------- |
+| 2   | - Thiết kế wireframe cho form Admin tạo sự kiện <br> - Xác định các field: Title, Description, Location, StartTime, EndTime, TotalSlots, Status, banner upload                                                             | 29/06/2026   | 29/06/2026      | https://cloudjourney.awsstudygroup.com/                |
+| 3   | - Dựng form tạo sự kiện <br> - Viết logic validate form (bắt buộc nhập, StartTime < EndTime, TotalSlots > 0) <br> - Xử lý chọn/preview ảnh banner trước khi upload                                                        | 30/06/2026   | 30/06/2026      |     https://cloudjourney.awsstudygroup.com/            |
+| 4   | - Kết nối form với API POST /events <br> - Xử lý upload banner kèm request tạo event <br> - **Thực hành:** Test tạo sự kiện thành công/thất bại, hiển thị thông báo                                                       | 01/07/2026   | 01/07/2026      |https://cloudjourney.awsstudygroup.com/|
+| 5   | - Dựng giao diện Admin - Sửa sự kiện: load dữ liệu cũ vào form, cho phép cập nhật thông tin và đổi banner <br> - Viết logic đổi trạng thái Draft/Active/Ended/Cancelled                                                    | 02/07/2026   | 02/07/2026      |        https://cloudjourney.awsstudygroup.com/         |
+| 6   | - Kết nối với API PUT /events/{id} và DELETE /events/{id} <br> - **Thực hành:** <br>&emsp; + Test cập nhật, đổi trạng thái, hủy sự kiện <br>&emsp; + Xử lý loading/error/thông báo thành công cho toàn bộ form Admin        | 03/07/2026   | 03/07/2026      |     https://cloudjourney.awsstudygroup.com/            |
 
 ### Kết quả đạt được tuần 11:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hoàn thành giao diện Admin - Tạo sự kiện: nhập đầy đủ thông tin, upload banner/poster, validate form đầy đủ trước khi gửi.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Hoàn thành giao diện Admin - Sửa/Hủy sự kiện: cập nhật thông tin, đổi trạng thái Draft/Active/Ended/Cancelled.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Kết nối thành công với API POST /events, PUT /events/{id}, DELETE /events/{id}.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Xử lý đầy đủ trạng thái loading, lỗi API, validate form và thông báo tạo/sửa/hủy thành công.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Admin có thể quản lý toàn bộ vòng đời sự kiện từ giao diện, dữ liệu đồng bộ đúng với EventTable và S3.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hoàn tất phần giao diện Admin của module Event Management.

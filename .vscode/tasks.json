@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Verify Hugo build",
+			"type": "shell",
+			"command": "hugo --gc --minify",
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}

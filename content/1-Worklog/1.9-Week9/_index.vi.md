@@ -5,55 +5,35 @@ weight: 1
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 9:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Triển khai các API ghi dữ liệu: POST /events, PUT /events/{id}, DELETE /events/{id}.
+* Xây dựng logic upload banner/poster sự kiện lên S3 và lưu BannerUrl vào EventTable.
+* Kiểm tra và áp dụng phân quyền Admin cho các API tạo/sửa/xóa sự kiện.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc                                                                                                                                                                                                                     | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | --------------- | -------------- |
+| 2   | - Viết logic API POST /events: <br>&emsp; + Validate dữ liệu đầu vào (Title, StartTime, EndTime, TotalSlots...) <br>&emsp; + Khởi tạo AvailableSlots = TotalSlots <br>&emsp; + Gán CreatedAt/UpdatedAt tự động            | 15/06/2026   | 15/06/2026      | <https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/> |
+| 3   | - Viết logic API PUT /events/{id}: <br>&emsp; + Cập nhật thông tin sự kiện <br>&emsp; + Cho phép đổi Status: Draft/Active/Ended/Cancelled <br>&emsp; + Cập nhật UpdatedAt                                                 | 16/06/2026   | 16/06/2026      | <https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/> |
+| 4   | - Viết logic API DELETE /events/{id}: <br>&emsp; + Xóa cứng hoặc chuyển Status sang Cancelled (soft delete) <br> - **Thực hành:** Test 3 API bằng Postman với các trường hợp hợp lệ/không hợp lệ                          | 17/06/2026   | 17/06/2026      | <https://docs.aws.amazon.com/apigateway/> |
+| 5   | - Tìm hiểu upload file lên S3 từ Lambda (base64 hoặc Presigned URL) <br> - Viết logic xử lý banner/poster: upload ảnh lên S3 Bucket, lấy URL và lưu vào trường BannerUrl trong EventTable                                 | 18/06/2026   | 18/06/2026      | <https://docs.aws.amazon.com/s3/> |
+| 6   | - Tìm hiểu Cognito/JWT: cách xác thực token, decode claims <br> - **Thực hành:** <br>&emsp; + Viết middleware kiểm tra JWT và role Admin <br>&emsp; + Áp dụng middleware cho POST/PUT/DELETE <br>&emsp; + Test trường hợp không có quyền (401/403) | 19/06/2026   | 19/06/2026      | <https://docs.aws.amazon.com/cognito/latest/developerguide/> |
 
 ### Kết quả đạt được tuần 9:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Triển khai thành công API POST /events: tạo sự kiện mới, tự động khởi tạo AvailableSlots bằng TotalSlots, dữ liệu lưu đúng vào EventTable.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Triển khai thành công API PUT /events/{id}: cập nhật thông tin sự kiện, cho phép thay đổi Status theo đúng vòng đời Draft → Active → Ended/Cancelled.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Triển khai thành công API DELETE /events/{id}: xử lý xóa hoặc chuyển trạng thái sự kiện sang Cancelled.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Hoàn thành logic upload banner/poster lên S3 Event Assets Bucket và lưu chính xác BannerUrl vào EventTable.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Áp dụng thành công cơ chế kiểm tra quyền Admin (JWT/Cognito) cho các API tạo/sửa/xóa, chặn được các request không hợp lệ.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
+* Kiểm thử toàn bộ 5 API (GET, GET/{id}, POST, PUT, DELETE) qua Postman, đảm bảo hoạt động đúng nghiệp vụ.
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hoàn tất phần Backend/Lambda của module Event Management, sẵn sàng cho việc xây dựng giao diện Frontend.

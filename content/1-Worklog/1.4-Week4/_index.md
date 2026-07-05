@@ -1,57 +1,59 @@
 ---
-title: "Week 4 Worklog"
+title: "Worklog Week 4"
 date: 2024-01-01
 weight: 1
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 4 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Understand the basic concepts of compute and storage services on AWS.
+- Learn the main components of Amazon EC2 such as instance type, AMI, key pair, security group, and EBS volume.
+- Learn about storage services such as Amazon EFS and Amazon FSx.
+- Understand the basic purpose of AWS Application Migration Service (AWS MGN).
+- Understand how EC2 Auto Scaling helps scale systems and improve availability.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 2 | - Learn the basics of Amazon EC2. <br>&emsp; + EC2 instance <br>&emsp; + AMI <br>&emsp; + Instance type <br>&emsp; + Key pair <br>&emsp; + Security Group <br> - Understand the use cases of EC2 for running virtual servers on AWS | 11/05/2026 | 11/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 3 | - Learn about storage options for EC2. <br>&emsp; + Amazon EBS <br>&emsp; + EBS volume types <br>&emsp; + Snapshot <br> - Learn how EBS is attached to EC2 instances. <br> - Note the relationship between EC2 and EBS | 12/05/2026 | 12/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 4 | - Learn about shared storage services on AWS. <br>&emsp; + Amazon EFS <br>&emsp; + Amazon FSx <br> - Compare the basic use cases of EBS, EFS, and FSx. <br> - Understand when shared file storage is needed in a Cloud architecture | 13/05/2026 | 13/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 5 | - Learn about AWS Application Migration Service (AWS MGN). <br> - Understand the basic idea of migrating servers and workloads to AWS. <br> - Note migration concepts such as source server, replication, cutover, and testing | 14/05/2026 | 14/05/2026 | https://cloudjourney.awsstudygroup.com/ |
+| 6 | - Learn about EC2 Auto Scaling. <br>&emsp; + Launch Template <br>&emsp; + Auto Scaling Group <br>&emsp; + Scaling policy <br> - Understand how Auto Scaling supports high availability and cost optimization. <br> - Summarize the content learned during the week | 15/05/2026 | 15/05/2026 | https://cloudjourney.awsstudygroup.com/ |
 
 ### Week 4 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Understood the basic role of Amazon EC2 as a compute service for running virtual servers on AWS.
 
-* Successfully created and configured an AWS Free Tier account.
+- Learned the main EC2 components:
+  - EC2 instance
+  - Amazon Machine Image (AMI)
+  - Instance type
+  - Key pair
+  - Security Group
+  - Elastic Block Store (EBS)
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+- Understood how Amazon EBS provides block storage for EC2 instances and how snapshots are used for backup purposes.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+- Distinguished the basic storage services on AWS:
+  - Amazon EBS for block storage
+  - Amazon EFS for shared file storage
+  - Amazon FSx for managed file systems
 
-* Used AWS CLI to perform basic operations such as:
+- Understood the purpose of AWS Application Migration Service (AWS MGN) in migrating servers and workloads from on-premises or other environments to AWS.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+- Learned several basic migration concepts:
+  - Source server
+  - Replication
+  - Test launch
+  - Cutover
+  - Migration lifecycle
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- Understood how EC2 Auto Scaling helps applications maintain availability and automatically adjust resources according to demand.
+
+- Recognized the relationship between scalability, availability, and cost optimization when designing Cloud systems.
+
+- Completed notes and summaries of compute, storage, migration, and scaling topics to prepare for practical exercises in the following weeks.
