@@ -6,10 +6,6 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-This page introduces the worklog completed during the internship. It summarizes how the work was carried out, how many weeks were used, and what was completed in each week.
-
-A standard worklog is usually carried out over approximately three months during the internship period, with weekly contents as follows:
-
 **Week 1:** [Getting familiar with AWS and basic AWS services](1.1-week1/)
 
 **Week 2:** [Managing IAM, AWS Budgets, and basic VPC concepts](1.2-week2/)
