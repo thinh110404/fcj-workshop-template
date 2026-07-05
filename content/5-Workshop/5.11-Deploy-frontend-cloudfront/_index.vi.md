@@ -134,7 +134,6 @@ aws cloudfront create-invalidation `
 - `--delete` đảm bảo object cũ không còn dùng bị xóa khỏi bucket.
 - `create-invalidation` bắt buộc mỗi lần deploy lại, nếu không CloudFront vẫn phục vụ bản cache cũ do TTL của cache behavior.
 
-<!-- > 📌 **Gợi ý hình ảnh:** Chụp terminal sau khi chạy `aws s3 sync`, và tab Invalidations trên CloudFront Console hiện trạng thái "Completed". -->
 
 ---
 
@@ -158,7 +157,7 @@ Hiện tại hệ thống **chưa cấu hình domain riêng**, chỉ dùng domai
 2. Trong CloudFront Distribution, cập nhật:
    - **Alternate domain names (CNAMEs)**: thêm `app.tenmien.com`.
    - **Custom SSL certificate**: chọn ACM certificate vừa tạo ở bước 1 (mục `ViewerCertificate` trong CloudFormation nếu quản lý bằng IaC).
-3. Tạo bản ghi DNS trỏ `app.tenmien.com` về domain CloudFront (dùng **Alias record** nếu domain quản lý trong Route 53, hoặc **CNAME** nếu dùng DNS provider khác).
+3. Tạo bản ghi DNS trỏ `app.tenmien.com` về domain CloudFront (dùng Alias record nếu domain quản lý trong Route 53, hoặc **CNAME** nếu dùng DNS provider khác).
 4. Kiểm thử lại toàn bộ luồng ở Bước 6 nhưng thay domain mặc định bằng domain riêng.
 
 > Đây là hạng mục khuyến nghị bổ sung, chưa nằm trong phạm vi đã triển khai của workshop hiện tại.

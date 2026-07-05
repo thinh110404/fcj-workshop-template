@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-During my internship at **Amazon Web Services Vietnam Co., Ltd.** from **20/04/2026** to **12/07/2026**, I had the opportunity to learn, practice, and apply the knowledge I had acquired at university in a real work environment.
+During my internship at **Amazon Web Services Viet Nam Company Limited** from **20/04/2026** to **12/07/2026**, I had the opportunity to learn, practice, and apply the knowledge I had acquired at university in a real work environment.
 
 I took part in developing a full-stack event management system (BE: .NET + DynamoDB, FE: React), which helped me improve my skills in requirements analysis, programming, testing, and working with cloud services (AWS).
 

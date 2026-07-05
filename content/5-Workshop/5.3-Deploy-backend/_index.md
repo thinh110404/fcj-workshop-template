@@ -196,7 +196,7 @@ The FrontendBucket is configured with full public access blocking (BlockPublicAc
 
 ## Step 10: Check the Cognito User Pool (reference, not creation)
 
-Open Amazon Cognito → User pools and check that the correct User Pool was used as the value for CognitoUserPoolIdParam during deployment.
+Open `Amazon Cognito → User pools` and check that the correct User Pool was used as the value for CognitoUserPoolIdParam during deployment.
 
 Note: this User Pool is not created by this stack; the backend only references its ARN to configure the CognitoAuthorizer for API Gateway.
 
@@ -255,7 +255,7 @@ sam deploy --parameter-overrides CognitoUserPoolIdParam=<real Cognito User Pool 
 
 ### CloudFormation stack rolls back
 
-Open CloudFormation → Stacks → <stack-name> → Events and read the first error event (usually the root cause), then fix the related resource or permission issue.
+Open `CloudFormation → Stacks → <stack-name> → Events` and read the first error event (usually the root cause), then fix the related resource or permission issue.
 
 ---
 

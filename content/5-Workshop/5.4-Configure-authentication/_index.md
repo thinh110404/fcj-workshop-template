@@ -59,7 +59,7 @@ Amplify.configure({
 });
 ```
 
-Add the following environment variables to the frontend .env (in addition to those already described in section 5.2):
+Add the following environment variables to the frontend `.env` (in addition to those already described in section 5.2):
 
 ```env
 VITE_COGNITO_CLIENT_ID=<Cognito App Client ID>
@@ -84,7 +84,7 @@ Instead of always saving tokens to localStorage (persistent) or always using ses
 
 ## Step 1: Open the Amazon Cognito User Pool
 
-Open AWS Management Console → Amazon Cognito → User pools and select the User Pool used by the system.
+Open AWS Management Console → `Amazon Cognito → User pools` and select the User Pool used by the system.
 
 ---
 
@@ -102,11 +102,11 @@ Open AWS Management Console → Amazon Cognito → User pools and select the Use
 
 ## Step 3: Review the Google Identity Provider configuration
 
-Open Amazon Cognito → User pools → Sign-in experience → Federated identity provider sign-in and verify that the Google provider is configured with the Client ID and Client Secret obtained from Google Cloud Console (OAuth Consent Screen + Credentials).
+Open Amazon Cognito → User pools → Sign-in experience → Federated identity provider sign-in and verify that the **Google** provider is configured with the Client ID and Client Secret obtained from Google Cloud Console (OAuth Consent Screen + Credentials).
 
 ![Google sign-in configuration](/fcj-workshop-template/images/5-Workshop/5.4-Configure-authentication/sign-inGoogle.jpg)
 
-Then check App integration → App client → Hosted UI to ensure:
+Then check App integration → `App client → Hosted UI` to ensure:
 - Google is enabled for the App Client being used.
 - Allowed callback URLs and Allowed sign-out URLs match the frontend values of VITE_COGNITO_REDIRECT_SIGN_IN and VITE_COGNITO_REDIRECT_SIGN_OUT.
 
@@ -118,7 +118,7 @@ Then check App integration → App client → Hosted UI to ensure:
 
 The Event Management Platform uses the Cognito group Admins to distinguish Admin roles.
 
-Open Amazon Cognito → User pools → Groups and verify the Admins group exists. Users belonging to this group will have a cognito:groups claim containing "Admins" when they sign in, for both email/password and Google sign-in.
+Open `Amazon Cognito → User pools → Groups` and verify the Admins group exists. Users belonging to this group will have a cognito:groups claim containing "Admins" when they sign in, for both email/password and Google sign-in.
 
 ![User Pool Admin group](/fcj-workshop-template/images/5-Workshop/5.4-Configure-authentication/UserPoolAdmin.jpg)
 

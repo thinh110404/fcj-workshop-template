@@ -108,6 +108,6 @@ Attending the **“FCAJ Community Day - June 2026”** workshop was an invaluabl
 - Every enterprise AI integration must strike a calculated balance between data security and infrastructure cost management.
 
 #### Event Media
-* [Insert check-in photos and key presentation slides from FCAJ Community Day here]
+
 
 > Overall, the event catalyzed a major shift in my system design paradigm. It perfectly embodied the event theme: When data is driven correctly, AI will rise powerfully to reshape the future of technology (**"DATA DRIVEN, AI RISEN"**).

@@ -104,7 +104,7 @@ Upload file ảnh thật trực tiếp lên uploadUrl bằng PUT (không cần t
 Invoke-WebRequest -Uri $uploadInfo.uploadUrl -Method Put -InFile ".\avatar-test.jpg" -ContentType "image/jpeg"
 ```
 
-> 📌 **Gợi ý hình ảnh:** Chụp terminal hiển thị response `uploadUrl`/`avatarUrl`, và chụp S3 Console cho thấy file ảnh vừa upload xuất hiện trong bucket avatar — không cần chụp giao diện Frontend.
+
 
 ---
 

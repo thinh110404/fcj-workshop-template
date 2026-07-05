@@ -33,7 +33,7 @@ Before testing any flow, make sure the sending email address has been verified i
 
 Checking verification status:
 
-1. Go to AWS Console → Amazon SES → Verified identities
+1. Go to `AWS Console → Amazon SES` → Verified identities
 2. Confirm that khacanh204@gmail.com shows a Verified status
 3. If not yet verified: select Create identity → Email address, enter the email, and AWS will send a confirmation link to that inbox — click the link to complete verification
 
@@ -288,7 +288,7 @@ Confirm these numbers match the API responses from Step 1 and Step 2.
 
 ## Step 4: Check the Lambda Logs
 
-Open CloudWatch → Log groups → the log group for AnalyticsFunction, find the log stream from the test time, and confirm there are no errors and that all the queries/scans ran successfully.
+Open `CloudWatch → Log groups → the log group` for AnalyticsFunction, find the log stream from the test time, and confirm there are no errors and that all the queries/scans ran successfully.
 
 ---
 

@@ -104,7 +104,7 @@ Upload the actual image file directly to uploadUrl using PUT (no token needed, s
 Invoke-WebRequest -Uri $uploadInfo.uploadUrl -Method Put -InFile ".\avatar-test.jpg" -ContentType "image/jpeg"
 ```
 
-<!-- > 📌 **Image suggestion:** Capture the terminal showing the `uploadUrl`/`avatarUrl` response, and capture the S3 Console showing the newly uploaded image file appearing in the avatar bucket — no need to capture the Frontend UI. -->
+
 
 ---
 
