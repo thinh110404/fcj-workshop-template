@@ -290,6 +290,7 @@ Confirm these numbers match the API responses from Step 1 and Step 2.
 
 Open `CloudWatch → Log groups → the log group` for AnalyticsFunction, find the log stream from the test time, and confirm there are no errors and that all the queries/scans ran successfully.
 
+
 ---
 
 ## Expected Outcome (Part 2)

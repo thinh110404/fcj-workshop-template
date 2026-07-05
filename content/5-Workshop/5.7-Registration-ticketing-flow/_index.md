@@ -131,6 +131,7 @@ Next, open DynamoDB → Tables → the Events table, and check that the event's 
 ![FullFe](/fcj-workshop-template/images/5-Workshop/5.7-Registration-ticketing-flow/FullSlotFE.jpg)
 
 
+
 ![FullAWS](/fcj-workshop-template/images/5-Workshop/5.7-Registration-ticketing-flow/FullSlot.jpg)
 
 ---

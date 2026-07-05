@@ -14,6 +14,7 @@ This entire business logic is handled by EventFunction (EventLambda), which read
 
 ---
 
+
 ## Event Management Flow
 
 1. Admin logs in (already holding a valid JWT, belonging to the Admins group — see section 5.4).

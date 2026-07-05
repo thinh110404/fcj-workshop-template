@@ -145,6 +145,7 @@ Open the CloudFront default domain in the browser: https://dfu4o0ltvpe4o.cloudfr
 
 The current system does not yet use a custom domain; it uses the default CloudFront domain. If a custom domain such as app.example.com is required later, the following steps are needed:
 
+
 1. Create an ACM certificate in the us-east-1 region (required for CloudFront).
 2. In the CloudFront Distribution, update **Alternate domain names (CNAMEs)** and the custom SSL certificate in `ViewerCertificate`.
 3. Create a DNS record pointing the custom domain to the CloudFront distribution (Alias if using Route 53, or **CNAME** otherwise).

@@ -6,11 +6,13 @@ chapter: false
 pre: " <b> 5.2. </b> "
 ---
 
+
 ---
 
 Before starting the workshop, you need to prepare an AWS account, local tools, source code, and project configuration.
 
 ---
+
 
 ## AWS account requirements
 

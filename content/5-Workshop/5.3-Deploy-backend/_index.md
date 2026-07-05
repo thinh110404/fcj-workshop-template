@@ -241,6 +241,7 @@ sam build --no-cached
 
 Check the .NET SDK version:
 
+
 ```powershell
 dotnet --version
 ```

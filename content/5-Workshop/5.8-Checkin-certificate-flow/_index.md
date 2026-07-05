@@ -25,6 +25,7 @@ All 3 routes in this module (check in a ticket, view ticket details, retrieve a 
 3. The Lambda also checks the Attendance table to see whether the ticket already has a check-in record for that specific eventId — a second, independent verification layer separate from the status field on the ticket.
 4. If valid, a new record is written to the Attendance table (including the check-in time and check-in method), and the ticket's status is updated to Checked_in.
 
+
 ---
 
 ## Certificate Generation and Sending Flow

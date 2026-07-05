@@ -91,6 +91,7 @@ $uploadInfo
 
 Expected response:
 
+
 ```json
 {
   "uploadUrl": "https://<bucket>.s3.ap-southeast-1.amazonaws.com/...",

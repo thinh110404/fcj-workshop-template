@@ -135,6 +135,7 @@ name → FullName
 cognito:groups → string such as "[Admins]" or "[Admins, Organizers]"
 ```
 
+
 ```csharp
 public bool IsAdmin => Groups.Contains("Admins");
 ```
