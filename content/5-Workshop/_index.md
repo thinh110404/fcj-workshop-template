@@ -51,7 +51,7 @@ The notification flow is designed with two separate branches routed through Amaz
 
 On the frontend side, the built React app is uploaded to a completely public-blocked S3 bucket, and CloudFront reads it through Origin Access Control (OAC) rather than direct S3 access. CloudFront handles 403/404 errors by returning index.html so React Router can manage client-side routing. The current setup uses the default AWS-provided domain (*.cloudfront.net) and does not yet use a custom domain or ACM certificate.
 
-![Serverless Event Platform Architecture Diagram](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.1-Workshop-overview/system-architecture.jpg)
+![Serverless Event Platform Architecture Diagram](/fcj-workshop-template/images/5-Workshop/5.1-Workshop-overview/system-architecture.jpg)
 <p style="text-align: center;"><i>Figure 5: Architecture diagram and serverless data-flow on AWS.</i></p>
 
 ---
@@ -127,3 +127,4 @@ The current template.yaml contains a CognitoUserPoolIdParam placeholder value th
 CloudFront currently uses the default domain provided by AWS (*.cloudfront.net) and is not yet configured with a custom domain. If a custom domain such as app.example.com is required later, an ACM certificate must be created in us-east-1 and configured through the CloudFront Aliases and ViewerCertificate settings.
 
 The sender email address (SES_FROM_EMAIL) is environment-specific; for public reports or workshops, replace it with a placeholder rather than a real address.
+

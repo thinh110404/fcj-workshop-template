@@ -52,7 +52,7 @@ Luồng thông báo được thiết kế theo hai nhánh riêng biệt, đều 
 
 Ở phần frontend, Frontend React sau khi build được upload lên một S3 bucket chặn public hoàn toàn, và được CloudFront đọc thông qua Origin Access Control (OAC) — không truy cập S3 trực tiếp. CloudFront xử lý lỗi 403/404 bằng cách trả về `index.html` để React Router tự xử lý routing phía client. Hiện CloudFront đang dùng domain mặc định do AWS cấp (`*.cloudfront.net`), chưa cấu hình Custom Domain riêng hay chứng chỉ ACM.
 
-![Sơ đồ kiến trúc Serverless Event Platform](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.1-Workshop-overview/system-architecture.jpg)
+![Sơ đồ kiến trúc Serverless Event Platform](/fcj-workshop-template/images/5-Workshop/5.1-Workshop-overview/system-architecture.jpg)
 <p style="text-align: center;"><i>Hình 5: Sơ đồ kiến trúc và luồng tương tác dữ liệu Serverless trên AWS.</i></p>
 
 ---
@@ -128,3 +128,4 @@ Cơ chế validate QR khi check-in hiện chỉ kiểm tra sự tồn tại củ
 CloudFront hiện đang dùng domain mặc định do AWS cấp (`*.cloudfront.net`), chưa cấu hình Custom Domain riêng. Nếu sau này cần domain riêng (ví dụ `app.tenmien.com`), cần tạo thêm ACM certificate ở region `us-east-1` (bắt buộc đối với CloudFront) và cấu hình `Aliases` cùng `ViewerCertificate` trong CloudFrontDistribution.
 
 Địa chỉ gửi email (`SES_FROM_EMAIL`) là thông tin cấu hình riêng của từng môi trường deploy; khi trình bày báo cáo/workshop công khai nên thay bằng placeholder thay vì địa chỉ email thật.
+

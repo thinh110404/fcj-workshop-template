@@ -79,7 +79,7 @@ Expected response:
 
 The success, message, checkInMethod, and status fields are always fixed as shown above for every test account. The remaining fields (ticketId, eventId, eventTitle, userId, userEmail, userFullName, checkInAt) will differ depending on the ticket and account being tested — when capturing real screenshots, these are the exact values that need to match the ticket created in section 5.7.
 
-![Checkin](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/Checkin.jpg)
+![Checkin](/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/Checkin.jpg)
 
 ---
 
@@ -141,7 +141,7 @@ Expected response:
 }
 ```
 
-![certificates](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/certificates.jpg)
+![certificates](/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/certificates.jpg)
 
 ---
 
@@ -163,9 +163,9 @@ Open Amazon S3 → Buckets → the project's certificates bucket, and check that
 
 Open CloudWatch → Log groups → the log group for AttendanceCertificateFunction, find the log stream from the test time, and check for log lines recording the outgoing email and a successful SES call status.
 
-![S3](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/S3bucketcertificates.jpg)
-![ClouldWatch](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/CloudWatch.jpg)
-![Mail](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/Mail.jpg)
+![S3](/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/S3bucketcertificates.jpg)
+![ClouldWatch](/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/CloudWatch.jpg)
+![Mail](/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/Mail.jpg)
 
 ---
 
@@ -180,3 +180,4 @@ After completing this section, the practitioner should be able to:
 - Verify the actual PDF file in S3 and confirm via logs that the email was sent through SES.
 - Understand the default-value fallback mechanism used when a ticket is missing secondary snapshot information.
 - Have the Attendance data ready for the analytics dashboard in section 5.10.
+

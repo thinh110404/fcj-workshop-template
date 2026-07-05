@@ -55,7 +55,7 @@ Hệ thống được triển khai tập trung tại AWS Region Singapore (**ap-
 
 #### Sơ đồ kiến trúc và luồng dữ liệu tổng thể
 
-![Sơ đồ kiến trúc Serverless Event Platform](https://thinh110404.github.io/fcj-workshop-template/images/2-Proposal/system-architecture.jpg)
+![Sơ đồ kiến trúc Serverless Event Platform](/fcj-workshop-template/images/2-Proposal/system-architecture.jpg)
 <p style="text-align: center;"><i>Hình 3.1: Sơ đồ kiến trúc và luồng tương tác dữ liệu Serverless trên AWS.</i></p>
 
 **Mô tả luồng vận hành:**
@@ -151,3 +151,4 @@ Nhờ thiết kế này, một Lambda Notification duy nhất (viết bằng .NE
 1. **Mã nguồn ứng dụng & Hạ tầng đám mây:** Thư mục mã nguồn Backend .NET 8 chạy ổn định và file cấu hình kiến trúc **template.yaml** (AWS SAM CLI) hoàn chỉnh, bao gồm cấu hình EventBridge Schedule, Custom Event Bus/Rule và CloudFront Distribution.
 2. **Cơ sở dữ liệu đám mây:** Cấu trúc 6 bảng DynamoDB Multi-Table (bao gồm `EventManagementNotificationLogTable`) hoạt động thông suốt, đồng bộ dữ liệu chuẩn xác.
 3. **Tài liệu Kỹ thuật (Workshop Report):** Tài liệu phân tích hệ thống, sơ đồ User Flow, thiết kế chi tiết bảng NoSQL, mô tả luồng Notification/Reminder qua EventBridge, và các kịch bản kiểm thử API liên thông End-to-End thành công.
+

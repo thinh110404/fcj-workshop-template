@@ -34,7 +34,7 @@ The project is deployed in the AWS region:
 ap-southeast-1
 ```
 
-![AWS Singapore Region](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/Region.jpg)
+![AWS Singapore Region](/fcj-workshop-template/images/5-Workshop/5.2-Prerequisite/Region.jpg)
 
 ---
 
@@ -214,3 +214,4 @@ Before starting the workshop, confirm that the AWS account has permissions for t
 template.yaml currently accepts CognitoUserPoolIdParam as a deployment parameter instead of hard-coding it, so you need the real User Pool ID ready before running sam deploy.
 
 Amazon SES runs in Sandbox mode by default and can only send emails to verified addresses. Verify the sender address (SES_FROM_EMAIL) and the test recipient addresses in the SES Console before testing notification/certificate flows.
+

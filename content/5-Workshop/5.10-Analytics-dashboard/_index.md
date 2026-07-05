@@ -66,7 +66,7 @@ Expected response:
 }
 ```
 
-![Dashboard](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.10-Analytics-dashboard/Dashboard.jpg)
+![Dashboard](/fcj-workshop-template/images/5-Workshop/5.10-Analytics-dashboard/Dashboard.jpg)
 
 ---
 
@@ -90,7 +90,7 @@ Expected response:
 }
 ```
 
-![DashboardEvent](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.10-Analytics-dashboard/DashboardEvent.jpg)
+![DashboardEvent](/fcj-workshop-template/images/5-Workshop/5.10-Analytics-dashboard/DashboardEvent.jpg)
 
 ---
 
@@ -114,3 +114,4 @@ After completing this section, the practitioner should be able to:
 - Understand how the attendance rate is calculated based on actual check-ins relative to confirmed tickets.
 - Cross-check and confirm that the dashboard metrics exactly match the raw data in DynamoDB and S3 already verified in previous sections.
 - This is the final data-summary section of the entire system — completing it means the entire core business lifecycle, from event creation to performance analytics, has been fully tested.
+

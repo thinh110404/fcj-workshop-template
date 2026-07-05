@@ -62,7 +62,7 @@ This workshop uses the following AWS services and tools:
 | AWS SAM | Builds and deploys the serverless backend |
 | AWS CloudFormation | Manages AWS resources via stack deployment |
 
-![Serverless Event Platform Architecture Diagram](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.1-Workshop-overview/system-architecture.jpg)
+![Serverless Event Platform Architecture Diagram](/fcj-workshop-template/images/5-Workshop/5.1-Workshop-overview/system-architecture.jpg)
 
 ---
 
@@ -87,7 +87,7 @@ The project source code is divided into two main parts:
 - Backend (BE): serverless architecture on AWS Lambda (.NET 8/C#), using AWS SAM (template.yaml) as Infrastructure as Code, organized into src/Functions (6 Lambda functions) and src/Shared (shared services, repositories, DTOs, validators, constants).
 - Frontend (FE): React 18+ with TypeScript, built with Vite, organized by feature folders such as components/events, components/tickets, components/certificates, components/notifications, and uses Axios for API calls and Cognito for authentication.
 
-| ![Image 1](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.1-Workshop-overview/BE.jpg) | ![Image 2](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.1-Workshop-overview/FE.jpg) |
+| ![Image 1](/fcj-workshop-template/images/5-Workshop/5.1-Workshop-overview/BE.jpg) | ![Image 2](/fcj-workshop-template/images/5-Workshop/5.1-Workshop-overview/FE.jpg) |
 |---|---|
 
 ---
@@ -130,3 +130,4 @@ The workshop demo follows this flow:
 After the workshop, the backend with 6 Lambda functions will be deployed successfully to AWS, and the React frontend will be built and distributed through CloudFront so it can connect to the deployed backend.
 
 Participants should be able to test the main flows of the Event Management Platform: event management, ticket registration, QR-based check-in, certificate issuance, automatic notifications/reminders through EventBridge, and event-performance analytics.
+

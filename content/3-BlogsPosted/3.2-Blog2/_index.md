@@ -21,7 +21,7 @@ Key points to grasp:
 * Monitoring – Full-Stack System Observability: Centralize log groups from all Lambda functions into Amazon CloudWatch, configuring CloudWatch Alarms and Amazon SNS to trigger instant notifications when error thresholds are breached.
 * Optimized Frontend Deployment: Storing static source code on Amazon S3 and distributing it globally via Amazon CloudFront CDN optimizes loading speeds, lowers latency, and minimizes operational overhead.
 
-![Completely Serverless Notification, Analytics, and Deployment Architecture](https://thinh110404.github.io/fcj-workshop-template/images/3.2-Blog2/Picture.png)
+![Completely Serverless Notification, Analytics, and Deployment Architecture](/fcj-workshop-template/images/3.2-Blog2/Picture.png)
 
 ### AWS CORE SERVICES REFERENCE LINKS (OFFICIAL DOCUMENTATION)
 * [AWS Serverless Multi-Tier Architectures with Amazon API Gateway and AWS Lambda](https://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier-architectures-api-gateway-lambda/serverless-multi-tier-architectures-api-gateway-lambda.html)
@@ -47,3 +47,4 @@ Based on the Serverless architecture diagram, the system is modularized into 4 i
 4. **Monitoring & Logging Layer:**
    * All execution traces, metrics, and logs from AWS Lambda or Amazon SES are synchronized into **Amazon CloudWatch**.
    * The platform is equipped with pre-configured **CloudWatch Alarms** to detect operational anomalies (runtime errors, throttling). Upon breach, the alarm triggers **Amazon SNS (Alert Notifications)** to dispatch real-time alerts to Admin/DevOps engineers via Email/SMS or Chatbot hooks.
+

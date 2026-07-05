@@ -79,7 +79,7 @@ Response mong đợi:
 
 Các field success, message, checkInMethod, status luôn cố định như trên với mọi tài khoản test. Các field còn lại (ticketId, eventId, eventTitle, userId, userEmail, userFullName, checkInAt) sẽ khác nhau tùy vé và tài khoản đang test — khi chụp ảnh minh họa thật, đây chính là những giá trị cần đối chiếu khớp với vé đã tạo ở mục 5.7.
 
-![Checkin](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/Checkin.jpg)
+![Checkin](/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/Checkin.jpg)
 
 ---
 
@@ -141,7 +141,7 @@ Response mong đợi:
 }
 ```
 
-![certificates](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/certificates.jpg)
+![certificates](/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/certificates.jpg)
 
 ---
 
@@ -163,9 +163,9 @@ Mở Amazon S3 → Buckets → bucket chứng chỉ của dự án, kiểm tra f
 
 Mở CloudWatch → Log groups → log group của AttendanceCertificateFunction, tìm log stream tại thời điểm test, kiểm tra các dòng log ghi nhận email gửi đi và trạng thái gọi SES thành công.
 
-![S3](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/S3bucketcertificates.jpg)
-![ClouldWatch](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/CloudWatch.jpg)
-![Mail](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/Mail.jpg)
+![S3](/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/S3bucketcertificates.jpg)
+![ClouldWatch](/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/CloudWatch.jpg)
+![Mail](/fcj-workshop-template/images/5-Workshop/5.8-Checkin-certificate-flow/Mail.jpg)
 
 ---
 
@@ -180,3 +180,4 @@ Sau khi hoàn thành phần này, người thực hiện có thể:
 - Kiểm tra được file PDF thật trong S3 và log xác nhận email đã gửi qua SES.
 - Hiểu cơ chế fallback dữ liệu mặc định khi vé thiếu thông tin snapshot phụ.
 - Dữ liệu Attendance đã sẵn sàng cho dashboard phân tích ở mục 5.10.
+

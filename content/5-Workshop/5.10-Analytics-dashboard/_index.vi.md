@@ -66,7 +66,7 @@ Response mong đợi:
 }
 ```
 
-![Dashboard](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.10-Analytics-dashboard/Dashboard.jpg)
+![Dashboard](/fcj-workshop-template/images/5-Workshop/5.10-Analytics-dashboard/Dashboard.jpg)
 
 ---
 
@@ -90,7 +90,7 @@ Response mong đợi:
 }
 ```
 
-![DashboardEvent](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.10-Analytics-dashboard/DashboardEvent.jpg)
+![DashboardEvent](/fcj-workshop-template/images/5-Workshop/5.10-Analytics-dashboard/DashboardEvent.jpg)
 
 ---
 
@@ -114,3 +114,4 @@ Sau khi hoàn thành phần này, người thực hiện có thể:
 - Hiểu cách tính tỷ lệ tham dự dựa trên số check-in thực tế so với số vé đã xác nhận.
 - Đối chiếu và xác nhận số liệu dashboard khớp đúng với dữ liệu thô trong DynamoDB và S3 đã kiểm tra ở các mục trước.
 - Đây là mục tổng kết dữ liệu của toàn bộ hệ thống — hoàn thành mục này đồng nghĩa đã kiểm thử xong toàn bộ vòng đời nghiệp vụ chính từ tạo sự kiện đến phân tích hiệu quả.
+

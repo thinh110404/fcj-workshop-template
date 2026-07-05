@@ -56,7 +56,7 @@ The system is deployed centrally in the AWS Singapore region (ap-southeast-1).
 
 #### Architecture Diagram and Overall Data Flow
 
-![Serverless Event Platform Architecture Diagram](https://thinh110404.github.io/fcj-workshop-template/images/2-Proposal/system-architecture.jpg)
+![Serverless Event Platform Architecture Diagram](/fcj-workshop-template/images/2-Proposal/system-architecture.jpg)
 <p style="text-align: center;"><i>Figure 3.1: Serverless architecture and data interaction flow on AWS.</i></p>
 
 **Operational flow description:**
@@ -152,3 +152,4 @@ Because of this design, a single Notification Lambda (written in .NET 8/C#) hand
 1. Application source code & cloud infrastructure: A stable .NET 8 backend source tree and a complete template.yaml (AWS SAM CLI) infrastructure configuration, including EventBridge Schedule, Custom Event Bus/Rule, and CloudFront Distribution settings.
 2. Cloud database: A working structure of 6 DynamoDB Multi-Table databases (including EventManagementNotificationLogTable), with accurate and synchronized data.
 3. Technical Documentation (Workshop Report): System analysis document, user flow diagrams, detailed NoSQL table design, Notification/Reminder flow description through EventBridge, and successful end-to-end API integration test scenarios.
+

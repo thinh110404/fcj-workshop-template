@@ -61,7 +61,7 @@ Workshop này sử dụng các dịch vụ và công cụ AWS sau:
 | AWS SAM | Build và deploy backend serverless |
 | AWS CloudFormation | Quản lý tài nguyên AWS thông qua stack |
 
-![Sơ đồ kiến trúc Serverless Event Platform](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.1-Workshop-overview/system-architecture.jpg)
+![Sơ đồ kiến trúc Serverless Event Platform](/fcj-workshop-template/images/5-Workshop/5.1-Workshop-overview/system-architecture.jpg)
 
 ---
 
@@ -87,7 +87,7 @@ Source code dự án được chia thành hai phần chính:
 - **Frontend (FE):** React 18+ với TypeScript, build bằng Vite, tổ chức theo feature (components/events, components/tickets, components/certificates, components/notifications...), gọi API qua Axios và xác thực qua Cognito.
 
 
-| ![Ảnh 1](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.1-Workshop-overview/BE.jpg) | ![Ảnh 2](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.1-Workshop-overview/FE.jpg) |
+| ![Ảnh 1](/fcj-workshop-template/images/5-Workshop/5.1-Workshop-overview/BE.jpg) | ![Ảnh 2](/fcj-workshop-template/images/5-Workshop/5.1-Workshop-overview/FE.jpg) |
 |---|---|
 
 ---
@@ -130,3 +130,4 @@ Workshop demo theo flow sau:
 Sau khi hoàn thành workshop, backend gồm 6 Lambda function sẽ được deploy thành công lên AWS, đồng thời Frontend React được build và phân phối qua CloudFront có thể kết nối với backend đã deploy.
 
 Người thực hiện có thể kiểm thử toàn bộ các luồng chính của Event Management Platform: quản lý sự kiện, đăng ký vé, check-in bằng QR, cấp chứng nhận, thông báo/nhắc lịch tự động qua EventBridge, và xem dashboard phân tích hiệu quả sự kiện.
+

@@ -24,7 +24,7 @@ Key points to grasp:
 
 The mechanism of using DynamoDB as a dynamic "Routing Table" allows upgrading customers from a standard tier to a VIP tier simply by changing the data configuration, without needing to modify code or infrastructure. Design your Routing Layer to be loosely coupled from the very beginning to freely customize the underlying infrastructure without impacting customers.
 
-![Hybrid Multi-Tenant Architecture for Stateful Services](https://thinh110404.github.io/fcj-workshop-template/images/3.1-Blog1/Picture1.png)
+![Hybrid Multi-Tenant Architecture for Stateful Services](/fcj-workshop-template/images/3.1-Blog1/Picture1.png)
 
 ### REFERENCE LINKS
 * [AWS Architecture Blog - Building a Hybrid Multi-Tenant Architecture for Stateful Services on AWS](https://aws.amazon.com/blogs/architecture/building-hybrid-multi-tenant-architecture-for-stateful-services-on-aws/)
@@ -48,3 +48,4 @@ Based on the system architecture diagram, the process of designing and operating
 4. **Secure Connectivity and Session State Storage (Session State):**
    * Establish a secure, isolated network connection between the compute cluster (EKS Pods) and the caching layer (Cache) using **AWS PrivateLink**.
    * This connection leads directly to a dedicated Cache account (**AWS Account Tier 1 Cache**) - which operates the **Amazon ElastiCache (Redis)** cluster. Here, the session states (Sticky Sessions) of users in the game or real-time chat application will be continuously synchronized and maintained with ultra-low latency of under 10ms.
+

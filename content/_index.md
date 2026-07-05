@@ -29,7 +29,7 @@ chapter: false
 
 &emsp; **Internship Duration:** From 20/04/2026 to 12/07/2026
 
-![Your profile picture](https://thinh110404.github.io/fcj-workshop-template/images/avatar1.jpg)
+![Your profile picture](/fcj-workshop-template/images/avatar1.jpg)
 
 ### Report Content
 
@@ -40,4 +40,5 @@ chapter: false
 5.  [Workshop](5-Workshop/)
 6.  [Self-evaluation](6-Self-evaluation/)
 7.  [Sharing and Feedback](7-Feedback/)
+
 

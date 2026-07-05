@@ -128,9 +128,9 @@ Mở DynamoDB → Tables → bảng Tickets → Explore table items, kiểm tra 
 
 Tiếp tục mở DynamoDB → Tables → bảng Events, kiểm tra số lượng đã đăng ký của sự kiện đã tăng đúng số lượng vé đã đăng ký thành công, và đã chạm số chỗ tối đa khi giao diện hiển thị "Đã hết slot đăng ký".
 
-![FullFe](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.7-Registration-ticketing-flow/FullSlotFe.jpg)
+![FullFe](/fcj-workshop-template/images/5-Workshop/5.7-Registration-ticketing-flow/FullSlotFe.jpg)
 
-![FullAWS](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.7-Registration-ticketing-flow/FullSlot.jpg)
+![FullAWS](/fcj-workshop-template/images/5-Workshop/5.7-Registration-ticketing-flow/FullSlot.jpg)
 
 ---
 
@@ -138,7 +138,7 @@ Tiếp tục mở DynamoDB → Tables → bảng Events, kiểm tra số lượn
 
 Mở Amazon EventBridge → Rules, tìm rule lắng nghe sự kiện đăng ký vé (nằm trên default event bus). Vào tab Monitoring của rule, kiểm tra biểu đồ Invocations tăng lên đúng số lần đăng ký vé vừa test.
 
-![Event](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.7-Registration-ticketing-flow/Rule.jpg)
+![Event](/fcj-workshop-template/images/5-Workshop/5.7-Registration-ticketing-flow/Rule.jpg)
 
 ---
 
@@ -150,7 +150,7 @@ Invoke-RestMethod -Uri "$baseUrl/my-tickets" -Method Get -Headers $headers
 
 Xác nhận response trả về danh sách vé, bao gồm vé vừa đăng ký ở Bước 2 — đây cũng chính là dữ liệu hiển thị khi bấm nút "Xem vé của tôi" trên giao diện.
 
-![Tikcet](https://thinh110404.github.io/fcj-workshop-template/images/5-Workshop/5.7-Registration-ticketing-flow/MyTicket.jpg)
+![Tikcet](/fcj-workshop-template/images/5-Workshop/5.7-Registration-ticketing-flow/MyTicket.jpg)
 
 ---
 
@@ -166,3 +166,4 @@ Sau khi hoàn thành phần này, người thực hiện có thể:
 - Xác nhận sự kiện đăng ký vé được publish lên EventBridge thành công qua biểu đồ Monitoring của Rule.
 - Xem lại danh sách vé cá nhân qua route lấy vé cá nhân.
 - Dữ liệu vé đã sẵn sàng cho luồng check-in và cấp chứng nhận ở mục 5.8.
+

@@ -21,7 +21,7 @@ Các điểm chính cần nắm:
 * Monitoring – Giám sát toàn diện hệ thống: Cấu hình ghi log tập trung từ các Lambda vào Amazon CloudWatch, thiết lập CloudWatch Alarms và Amazon SNS để tự động gửi cảnh báo khi tỷ lệ lỗi vượt ngưỡng mong muốn.
 * Triển khai Frontend tối ưu: Lưu trữ mã nguồn tĩnh trên Amazon S3 và phân phối qua CDN toàn cầu bằng Amazon CloudFront giúp cải thiện tốc độ truy cập, giảm độ trễ và tối ưu chi phí vận hành.
 
-![Kiến trúc Serverless Notification, Analytics và Deployment](https://thinh110404.github.io/fcj-workshop-template/images/3.2-Blog2/Picture.png)
+![Kiến trúc Serverless Notification, Analytics và Deployment](/fcj-workshop-template/images/3.2-Blog2/Picture.png)
 
 ### LINK THAM KHẢO DỊCH VỤ CỐT LÕI (AWS OFFICIAL DOCUMENTATION)
 * [AWS Serverless Multi-Tier Architectures with Amazon API Gateway and AWS Lambda](https://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier-architectures-api-gateway-lambda/serverless-multi-tier-architectures-api-gateway-lambda.html)
@@ -47,3 +47,4 @@ Dựa trên sơ đồ kiến trúc Serverless, hệ thống được module hóa
 4. **Tầng Giám sát & Ghi log (Monitoring & Logging Layer):**
    * Toàn bộ trạng thái hoạt động và log của AWS Lambda hay Amazon SES đều được đồng bộ về **Amazon CloudWatch**.
    * Hệ thống cấu hình sẵn **CloudWatch Alarms** để phát hiện bất thường (lỗi runtime, quá tải). Khi có cảnh báo, CloudWatch Alarm sẽ kích hoạt **Amazon SNS (Alert Notifications)** để gửi cảnh báo tức thời tới Admin/DevOps qua Email/SMS hoặc Chatbot.
+
